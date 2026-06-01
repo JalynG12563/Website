@@ -89,6 +89,7 @@ body {
 background-image: url('https://www.fightersgeneration.com/nz2/game/guiltygear-xx-reload-background-castle.png');
 background-attachment: fixed;
 background-repeat: repeat;
+overflow: hidden;
 
 
 
@@ -102,11 +103,12 @@ border-width: 10px;
 border-image: url("https://dl.dropbox.com/scl/fi/6wo0voidugxmgg0a81v20/lace-border-png-37013.png?rlkey=3hn4k762e8y0v6d2v6mwrtcbr&st=5o8bpex4") 60 fill round;    
   margin: auto;
   width: 884px;
-  height: 950px;
+  height: 980px;
   position: relative;
   padding: 5px;
   z-index: 4;
   background: black;
+
 }
 .container-one{
 border-width: 1px;
@@ -442,9 +444,48 @@ input[type=range]::-moz-range-thumb{
 }
 
 
+
+
+
+
+
+/* Your new custom styles with prefixes */
+body.my-body {
+  overflow: hidden;
+}
+
+.my-container {
+  position: absolute;
+  left: 25em;
+  top: 13em;
+}
+
+.my-button {
+  background: pink;
+  font-family: 'fenotype';
+  color: white;
+  border: 1px dotted black;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-text-stroke: 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 
 <div class="container">
+  
 <div class="container-one">
 <img src=""> <div id="name">Beast's Lair</div>
 </div>
@@ -539,6 +580,16 @@ Hey yall, my name is Jalyn George.I am a Computer Science undergraduate at Unive
                     artist:"SHAZNA",
                     path:"https://od.lk/s/MjVfMTM5Mzg2ODE3Xw/Virgin.mp3"
                 },
+
+                {
+                    name:"テクパラを踊ってみたVampire",
+                    artist:"Vamps",
+                    path:"https://od.lk/s/MjVfMTM5NDQyMjU1Xw/%E3%83%86%E3%82%AF%E3%83%91%E3%83%A9%E3%82%92%E8%B8%8A%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9FVampire%20Vamps.mp3"
+                },
+
+                
+
+                
                 
             ];
             //
@@ -663,6 +714,9 @@ Hey yall, my name is Jalyn George.I am a Computer Science undergraduate at Unive
 
 
 
+    <iframe src="webdeck-player-v.1.0.2/webdeck-player/index.html" height="255" width="600" border="none" style="position: absolute; left: 17em; top: 43em;"></iframe>
+<br>
+<button onclick="window.open('webdeck-player-v.1.0.2/webdeck-player/index.html', 'Web Deck Player', 'height=400, width=600')" style="position: absolute; left: 30em; top: 47.8em;">Open Web Deck Player</button>
 
 
 
